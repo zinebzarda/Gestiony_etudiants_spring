@@ -9,4 +9,6 @@ public interface EtudiantDAO {
     int editEtudiant(Etudiant etudiant) throws SQLException, ClassNotFoundException;
     int deleteEtudiant(int id) throws SQLException, ClassNotFoundException;
 
+    ArrayList<Etudiant> selectBiId(int id) throws SQLException, ClassNotFoundException;
+
 }

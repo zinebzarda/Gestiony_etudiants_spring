@@ -17,6 +17,8 @@
 
 <table>
     <tr>
+        <th>id</th>
+
         <th>Nom</th>
         <th>Prenom</th>
         <th>Numero de Matricule</th>
@@ -24,15 +26,17 @@
         <th>Action</th>
     </tr>
 
-    <c:forEach items="${shows}" var="studant">
+    <c:forEach items="${shows}" var="etudiant">
         <tr>
-            <td>${studant.nomEtudient}</td>
-            <td>${studant.prenomEtudient}</td>
-            <td>${studant.numeroMatricule}</td>
-            <td>${studant.mailEtudient}</td>
+            <td>${etudiant.idEtudient}</td>
+
+            <td>${etudiant.nomEtudient}</td>
+            <td>${etudiant.prenomEtudient}</td>
+            <td>${etudiant.numeroMatricule}</td>
+            <td>${etudiant.mailEtudient}</td>
             <td>
-                <a href="delete/${studant.idEtudient}">delete</a>
-                <a href="edit?id=${studant.idEtudient}">edite</a>
+                <a href="deleteEtudiant/${etudiant.idEtudient}">delete</a>
+                <a href="edit/${etudiant.idEtudient}">edite</a>
             </td>
         </tr>
     </c:forEach>

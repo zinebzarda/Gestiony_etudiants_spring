@@ -17,6 +17,14 @@ public class Etudiant {
 
         }
 
+        public Etudiant(Integer idEtudient, String nomEtudient, String prenomEtudient, String numeroMatricule, String mailEtudient) {
+                this.idEtudient = idEtudient;
+                this.nomEtudient = nomEtudient;
+                this.prenomEtudient = prenomEtudient;
+                this.numeroMatricule = numeroMatricule;
+                this.mailEtudient = mailEtudient;
+        }
+
 
         public Integer getIdEtudient() {
                 return idEtudient;

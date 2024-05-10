@@ -12,19 +12,19 @@
     <title>Title</title>
 </head>
 <body>
-<c:forEach items="${student}" var="etudiant">
+<c:forEach items="${etudiant}" var="etud">
 
-    <form action="<c:url value='/edit/${std.id_Student}'/>" method="post">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="firstName" value="${std.first_name}"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lastName" value="${std.last_name}"><br><br>
+    <form action="<c:url value='/edit/${etud.idEtudient}'/>" method="post">
+        <label for="nomEtudient">First name:</label><br>
+        <input type="text" id="nomEtudient" name="nomEtudient" value="${etud.nomEtudient}"><br>
+        <label for="prenomEtudient">Last name:</label><br>
+        <input type="text" id="prenomEtudient" name="prenomEtudient" value="${etud.prenomEtudient}"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" value="${std.email}"><br><br>
-        <label for="st">Status:</label><br>
-        <input type="text" id="st" name="status" value="${std.status}"><br><br>
-        <input type="submit" value="Submit">
+        <label for="numeroMatricule">Email:</label><br>
+        <input type="text" id="numeroMatricule" name="numeroMatricule" value="${etud.numeroMatricule}"><br><br>
+        <label for="mailEtudient">Status:</label><br>
+        <input type="text" id="mailEtudient" name="mailEtudient" value="${etud.mailEtudient}"><br><br>
+        <button type="submit" >Edit</button>
     </form>
 </c:forEach>
 </body>
