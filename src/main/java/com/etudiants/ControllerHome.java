@@ -39,6 +39,20 @@ public class ControllerHome {
         EtudiantDAO etudiantDAO = new EtudiantsDAOImpl();
         Etudiant etudiant = new Etudiant(nomEtudient, prenomEtudient, numeroMatricule, mailEtudient);
         etudiantDAO.addEtudiant(etudiant);
-        return "redirect:/home";
+        return "redirect:/showEtudients";
     }
+
+    @GetMapping( "/edit")
+    public String editEtudiants(ModelMap modelMap){
+        modelMap.addAttribute("edit","Welcome to Edit page");
+        return "editEtudiants";
+    }
+    @GetMapping( "/delete/{id}")
+    public String DeleteStudent(@PathVariable("id") int id, ModelMap modelMap) throws SQLException, ClassNotFoundException {
+        EtudiantDAO etudiant = new EtudiantsDAOImpl();
+        etudiant.deleteEtudiant(id);
+        modelMap.addAttribute("delete","Welcome to Delete page");
+        return "redirect:/showEtudients";
+    }
+
 }

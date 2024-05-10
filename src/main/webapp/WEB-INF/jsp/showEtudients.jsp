@@ -31,9 +31,8 @@
             <td>${studant.numeroMatricule}</td>
             <td>${studant.mailEtudient}</td>
             <td>
-                <a href="#">edite</a>
-                <a href="#">delete</a>
-
+                <a href="delete/${studant.idEtudient}">delete</a>
+                <a href="edit?id=${studant.idEtudient}">edite</a>
             </td>
         </tr>
     </c:forEach>

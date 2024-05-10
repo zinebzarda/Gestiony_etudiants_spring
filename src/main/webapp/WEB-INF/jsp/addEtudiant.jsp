@@ -18,14 +18,14 @@
 <h2>Formulaire d'ajout d'étudiant</h2>
 <form action="addEtudiant" method="post">
     <label for="nomEtudient">Nom:</label><br>
-    <input type="text" id="nomEtudient" name="nom"><br>
+    <input type="text" id="nomEtudient" name="nomEtudient"><br>
     <label for="prenomEtudient">Prenom:</label><br>
-    <input type="text" id="prenomEtudient" name="prenom"><br><br>
+    <input type="text" id="prenomEtudient" name="prenomEtudient"><br><br>
 
     <label for="numeroMatricule">Numero de Matricule:</label><br>
-    <input type="text" id="numeroMatricule" name="matricule"><br><br>
+    <input type="text" id="numeroMatricule" name="numeroMatricule"><br><br>
     <label for="mailEtudient">Email:</label><br>
-    <input type="text" id="mailEtudient" name="mail"><br><br>
+    <input type="text" id="mailEtudient" name="mailEtudient"><br><br>
     <button type="submit">Add</button>
 </form>
 </body>
