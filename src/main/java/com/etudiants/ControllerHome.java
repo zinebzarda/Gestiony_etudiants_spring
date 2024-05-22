@@ -1,5 +1,6 @@
 package com.etudiants;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -13,14 +14,17 @@ import java.util.ArrayList;
 @RequestMapping("")
 public class ControllerHome {
 
-    @GetMapping("/")
+    @Autowired
+private EtudiantDAO etudiantDAO;
+    @GetMapping("/home")
     public String home() {
+
         return "Home";
     }
 
     @GetMapping("/showEtudients")
     public String showEtudients(ModelMap modelMap) throws SQLException, ClassNotFoundException {
-        EtudiantDAO etudiantDAO = new EtudiantsDAOImpl();
+
         modelMap.addAttribute("shows", etudiantDAO.ShowEtudiant());
         return "showEtudients";
     }
@@ -37,7 +41,7 @@ public class ControllerHome {
             @RequestParam("numeroMatricule") String numeroMatricule,
             @RequestParam("mailEtudient") String mailEtudient
     ) throws SQLException, ClassNotFoundException {
-        EtudiantDAO etudiantDAO = new EtudiantsDAOImpl();
+
         Etudiant etudiant = new Etudiant(nomEtudient, prenomEtudient, numeroMatricule, mailEtudient);
         etudiantDAO.addEtudiant(etudiant);
         return "redirect:/showEtudients";
@@ -45,7 +49,7 @@ public class ControllerHome {
 
     @GetMapping("/edit/{id}")
     public String editEtudiants(@PathVariable("id") int id, ModelMap modelMap) throws SQLException, ClassNotFoundException {
-        EtudiantDAO etudiantDAO = new EtudiantsDAOImpl();
+
         ArrayList<Etudiant> etudiants = etudiantDAO.selectBiId(id);
         modelMap.addAttribute("etudiant", etudiants);
         return "editEtudiants";
@@ -57,7 +61,7 @@ public class ControllerHome {
                                 @RequestParam("prenomEtudient") String prenomEtudient,
                                 @RequestParam("numeroMatricule") String numeroMarticuleail,
                                 @RequestParam("mailEtudient") String mailEtudient) throws SQLException, ClassNotFoundException {
-        EtudiantDAO etudiantDAO = new EtudiantsDAOImpl();
+
         Etudiant etudiant = new Etudiant(id, nomEtudient, prenomEtudient, numeroMarticuleail, mailEtudient);
         System.out.println(nomEtudient+"////////////////////////////");
         etudiantDAO.editEtudiant(etudiant);
@@ -66,8 +70,8 @@ public class ControllerHome {
 
     @GetMapping( "/deleteEtudiant/{id}")
     public String deleteEtudiant(@PathVariable("id") int id, ModelMap modelMap) throws SQLException, ClassNotFoundException {
-        EtudiantDAO etudiant = new EtudiantsDAOImpl();
-        etudiant.deleteEtudiant(id);
+
+        etudiantDAO.deleteEtudiant(id);
         modelMap.addAttribute("deleteEtudiant", "fbffdnfb");
         return "redirect:/showEtudients";
     }

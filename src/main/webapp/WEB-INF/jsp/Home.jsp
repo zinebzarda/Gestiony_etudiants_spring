@@ -16,10 +16,13 @@
     <meta name="author" content="">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style><%@include file="css/bootstrap.min.css"%></style>
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <style><%@include file="css/style.css"%></style>
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
+    <style><%@include file="css/responsive.css"%></style>
     <!-- fevicon -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Tweaks for older IEs-->
@@ -38,7 +41,7 @@
                 <div class="full">
                     <div class="center-desk">
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                            <a href="Home"><img src="https://i.ibb.co/JkxKTyL/school.png" alt="#" width="40px" height="40px" /></a>
                         </div>
                     </div>
                 </div>
@@ -51,23 +54,21 @@
                     <div class="collapse navbar-collapse" id="navbarsExample04">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="home">Home</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link" href="add">Add</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="skating.html">skating</a>
+                                <a class="nav-link" href="showEtudients">Show List Student</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="shop.html">shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Us</a>
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
+
             </div>
             <div class="col-md-2">
                 <ul class="email text_align_right">
@@ -79,23 +80,44 @@
     </div>
 </div>
 <!-- end header inner -->
+
+<div class="carousel-inner">
+    <!-- first slide -->
+    <div class="carousel-item active">
+        <div class="carousel-caption relative">
+            <div class="row d_flex">
+                <div  class="col-md-5">
+                    <div class="board">
+                        <h3>
+                            Skating<br> Board<br> School
+                        </h3>
+                        <div class="link_btn">
+                            <a class="read_more" href="#">Read More<span></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="banner_img">
+                        <figure><img class="img_responsive" src="https://img.freepik.com/photos-gratuite/rendu-3d-dessin-anime-comme-garcon-faisant-ses-devoirs_23-2150797744.jpg"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- about -->
 <div class="about">
     <div class="container-fluid">
         <div class="row d_flex">
             <div class="col-md-6">
-                <div class="titlepage text_align_left">
-                    <h2>About <br>Skating <br> school</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
+                <div class="titlepage text_align_left text-dark">
+                    <h2 style="color: #111111">About <br>Skating <br> school</h2>
+                    <p style="color: #111111">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
                     </p>
-                    <div class="link_btn">
-                        <a class="read_more" href="about.html">Read More</a>
-                    </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about_img text_align_center">
-                    <figure><img src="images/about.png" alt="#"/></figure>
+                    <figure><img src="https://img.freepik.com/vecteurs-libre/fond-garcon-creatif-elements-scolaires_23-2147660456.jpg" alt="#"/></figure>
                 </div>
             </div>
         </div>
@@ -123,7 +145,7 @@
                         <div class="col-md-12">
                             <div class="infoma">
                                 <h3>Newsletter</h3>
-                                <form class="form_subscri">
+                                <form class="form_subscri" action="home" method="get">
                                     <div class="row">
                                         <div class="col-md-12">
                                         </div>
@@ -144,23 +166,14 @@
                             <div class="infoma">
                                 <h3>Useful Link</h3>
                                 <ul class="fullink">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="skating.html">Skating</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="add">Add</a></li>
+                                    <li><a href="showEtudients">Show List Student</a></li>
+                                    <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="infoma text_align_left">
-                                <ul class="social_icon">
-                                    <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                    <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,6 +192,7 @@
 </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script><%@include file="js/bootstrap.bundle.min.js"%></script>
 <%--% refrrefbrekjfnbrjbfnrjbrjhbrhjhj
 <div class="topnav">
     <a class="active" href="Home.jsp">Home</a>

@@ -15,17 +15,11 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
-@import url(normalize.css);
 @import url(icomoon.css);
 @import url(font-awesome.min.css);
-@import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
+
+
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -255,7 +249,7 @@ button {
      content: "";
      width: 0px;
      height: 1px;
-     border: #f0390f solid 1px;
+     border: rgb(91, 147, 200)solid 1px;
      transition: all 0.2s linear;
      display: block;
      margin-bottom: -16px;
@@ -273,7 +267,7 @@ button {
 }
 
 .read_more:hover {
-     color: #f0390f;
+     color: rgb(91, 147, 200);
      transition: ease-in all 0.5s;
 }
 
@@ -357,7 +351,7 @@ z-index: 999;
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
      color: #fff;
-     background: #f0390f;
+     background: rgb(91, 147, 200);
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
@@ -365,7 +359,7 @@ z-index: 999;
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
      color: #fff;
-     background: #f0390f;
+     background: rgb(91, 147, 200);
 }
 
 .di_no {
@@ -466,7 +460,7 @@ ul.email li i {
 #carouselExampleIndicators .carousel-control-next {
      width: 66px;
      height: 66px;
-     background-color: #3e0bce;
+     background-color: rgb(91, 147, 200);
      color: #fff;
      font-size: 15px;
      opacity: 1;
@@ -487,7 +481,7 @@ ul.email li i {
 #carouselExampleIndicators .carousel-control-next:hover,
 #carouselExampleIndicators .carousel-control-prev:focus,
 #carouselExampleIndicators .carousel-control-prev:hover {
-     background-color: #f0390f;
+     background-color: rgb(91, 147, 200);
      color: #fff;
 }
 
@@ -517,7 +511,7 @@ ul.email li i {
 
 .class_box {
      border-radius: 10px;
-     background: #f0390f;
+     background: rgb(91, 147, 200);
      margin-bottom: 58px;
      transition: ease-in all 0.5s;
      padding: 40px 50px 75px 50px;
@@ -540,7 +534,7 @@ ul.email li i {
 }
 
 .blue {
-     background: #3e0bce;
+     background: rgb(91, 147, 200);
 }
 
 .margi_bottom {
@@ -554,7 +548,7 @@ ul.email li i {
 /** about section **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     background: url(../images);
      background-size: cover;
      background-position: center center;
      background-repeat: no-repeat;
@@ -592,12 +586,12 @@ ul.email li i {
 
 .about .read_more {
      color: #fff;
-     background: #3e0bce;
+     background: rgb(91, 147, 200);
 }
 
 .about .read_more:hover {
-     color: #f0390f;
-     background: #3e0bce;
+     color: rgb(91, 147, 200);
+     background: rgb(91, 147, 200);
 }
 
 
@@ -679,7 +673,7 @@ ul.email li i {
 /** testimonial **/
 
 .testimonial {
-     background: #3e0bce;
+     background: rgb(91, 147, 200);
      padding: 90px 0;
      margin-top: 90px;
 }
@@ -694,7 +688,7 @@ ul.email li i {
 
 #myCarousel a.carousel-control-next,
 #myCarousel a.carousel-control-prev {
-     background: #f0390f;
+     background: rgb(91, 147, 200);
      width: 72px;
      height: 72px;
      top: 112%;
@@ -717,7 +711,7 @@ ul.email li i {
 #myCarousel a.carousel-control-prev:focus,
 #myCarousel a.carousel-control-prev:hover {
      color: #fff;
-     background: #f0390fd4;
+     background: rgb(91, 147, 200);
      opacity: 1;
 }
 
@@ -732,7 +726,7 @@ ul.email li i {
 }
 
 .test_box {
-     background: #f0390f;
+     background: rgb(91, 147, 200);
      border-radius: 20px;
      padding: 0 20px 40px 20px;
 }
@@ -822,7 +816,7 @@ ul.email li i {
 }
 
 .border_left {
-     border-left: #f0390f solid 1px;
+     border-left: rgb(91, 147, 200) solid 1px;
      padding-left: 40px;
 }
 
@@ -873,7 +867,7 @@ ul.conta li i {
      padding-right: 15px;
      text-align: center;
      font-size: 18px;
-     color: #5326d3;
+     color: rgb(91, 147, 200);
 }
 
 ul.conta li a {
@@ -903,7 +897,7 @@ ul.conta li a {
 .subsci_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
-     background-color: #f0390f;
+     background-color: rgb(91, 147, 200);
      text-transform: uppercase;
      color: #fff;
      max-width: 220px;
@@ -917,7 +911,7 @@ ul.conta li a {
 }
 
 .subsci_btn:hover {
-     background-color: #3e0bce;
+     background-color: rgba(28, 10, 1, 0.98);
      transition: ease-in all 0.5s;
      color: #fff;
 }
@@ -936,7 +930,7 @@ ul.fullink li a {
 }
 
 ul.fullink li a:hover {
-     color: #5326d3;
+     color: rgb(91, 147, 200);
 }
 
 ul.fullink li:nth-child(1) {
@@ -975,19 +969,19 @@ ul.social_icon li a i {
 
 ul.social_icon li a:hover {
      color: #fff;
-     background: #5326d3;
+     background: rgb(91, 147, 200);
      transition: ease-in all 0.5s;
 }
 
 .copyright {
      margin-top: 90px;
      padding-bottom: 25px;
-     background: #f0390f
+     background:rgb(91, 147, 200);
 }
 
 .copyright p {
      color: #fff;
-     font-size: 17 px;
+     font-size: 17px;
      line-height: 22px;
      text-align: center;
      padding-top: 25px;
@@ -1000,7 +994,7 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-     color: #3e0bce;
+     color: rgb(91, 147, 200);
 }
 
 
@@ -1010,7 +1004,7 @@ ul.social_icon li a:hover {
 /**  inner page css **/
 
 .inner_page .header {
-     box-shadow: 0 0 10px rgb(240, 57, 15);
+     box-shadow: 0 0 10px rgb(91, 147, 200);
      margin-bottom: 10px;
      position: inherit;
 }
@@ -1043,48 +1037,48 @@ ul.social_icon li a:hover {
      width: 100%;
      height: 50px;
      background: #fff;
-     color: #501f14;
+     color: rgb(91, 147, 200);
      font-size: 17px;
      font-weight: normal;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 rgb(91, 147, 200);
 }
 
 .custom-select {
      padding: 0px 10px;
-     color: #501f14;
+     color: rgb(91, 147, 200);
      font-size: 17px;
      height: 50px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 rgb(91, 147, 200);
      margin-bottom: 20px;
      border-radius: 11px;
 }
 
 .custom-select:focus {
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 rgb(91, 147, 200);
 }
 
 .main_form .textarea {
      margin-bottom: 20px;
      width: 100%;
      background: #fff;
-     color: #501f14;
+     color: rgb(91, 147, 200);
      font-size: 17px;
      font-weight: normal;
      padding: 12px 15px 10px 15px;
      height: 155px;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0#f34b52d4;
+     box-shadow: 0px 0px 2px rgb(91, 147, 200);
 }
 
 .main_form .send_btn {
      font-size: 18px;
      transition: ease-in all 0.5s;
-     background-color: #f0390f;
+     background-color:rgb(91, 147, 200);
      text-transform: uppercase;
      color: #fff;
      max-width: 193px;
@@ -1098,13 +1092,13 @@ ul.social_icon li a:hover {
 }
 
 .main_form .send_btn:hover {
-     background: #3e0bce;
+     background: rgb(91, 147, 200);
      color: #fff;
      transition: ease-in all 0.5s;
 }
 
 #request *::placeholder {
-     color: #501f14;
+     color: rgb(91, 147, 200);
      opacity: 1;
 }
 
